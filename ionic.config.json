@@ -1,0 +1,8 @@
+{
+  "name": "KAD Fitness",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "1db7eab4"
+}
