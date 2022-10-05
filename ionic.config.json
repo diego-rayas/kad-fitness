@@ -1,7 +1,10 @@
 {
   "name": "KAD Fitness",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular",
   "id": "1db7eab4"
