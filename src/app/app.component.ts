@@ -11,7 +11,7 @@ export class AppComponent {
     { title: 'Recetas', url: '/folder/Recetas', icon: 'book' },
     { title: 'Ejercicios', url: '/folder/Ejercicios', icon: 'pulse' },
     { title: 'Datos Nutricionales', url: '/folder/Datos Nutricionales', icon: 'restaurant' },
-    { title: 'IMC', url: '/folder/IMC', icon: 'calculator' },
+    { title: 'IMC', url: '/imc', icon: 'calculator' },
     { title: 'Cerrar Sesion', url: '/', icon: 'exit' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
