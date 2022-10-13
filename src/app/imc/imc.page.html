@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true">
+  
+  <ion-item>
+    <ion-label>Altura:</ion-label>
+    <ion-input [formControl]="Altura"></ion-input>
+    <ion-label>Peso:</ion-label>
+    <ion-input [formControl]="Peso"></ion-input>
+  </ion-item>
+  <p class="ion-padding">Tu IMC es de:{{ Peso.value / (Altura.value * Altura.value) *10000 }}</p>
+
+</ion-content>
