@@ -5,12 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyD18E-32UeH1NdFJLBt9aiJcWlBuN_eJYM",
-    authDomain: "kadfitness-5f8d9.firebaseapp.com",
-    databaseURL: "https://kadfitness-5f8d9-default-rtdb.firebaseio.com",
-    projectId: "kadfitness-5f8d9",
-    storageBucket: "kadfitness-5f8d9.appspot.com",
-    messagingSenderId: "1007194171169"
+    projectId: 'fitt-9f868',
+    appId: '1:1058677080625:web:bf7eb6049c4bdd0e5a4b10',
+    storageBucket: 'fitt-9f868.appspot.com',
+    apiKey: 'AIzaSyBypPPi76VA-PiTgcRo2QwUt5zDzXMkgUE',
+    authDomain: 'fitt-9f868.firebaseapp.com',
+    messagingSenderId: '1058677080625',
+    measurementId: 'G-DQH9259ED5',
   }
 };
 

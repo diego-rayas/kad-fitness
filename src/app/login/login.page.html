@@ -7,18 +7,19 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <form>
+  <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
     <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="text" formControlName="email"></ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
     </ion-item>
     <ion-row>
       <ion-col>
-        <ion-button [routerLink]="['/homeLog']" color="danger" expand="block">Iniciar Sesión</ion-button>
+        <!-- <ion-button [routerLink]="['/homeLog']" color="danger" expand="block">Iniciar Sesión</ion-button> -->
+        <ion-button type="submit" color="danger" expand="block">Sign Up</ion-button>
         <!-- <ion-button type="submit" color="danger" expand="block">Iniciar Sesión</ion-button> -->
         <a [routerLink]="['/forgot-password']" class="small-text">Olvido su contraseña</a>
       </ion-col>
