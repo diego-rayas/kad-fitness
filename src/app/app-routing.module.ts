@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'imc',
     loadChildren: () => import('./imc/imc.module').then( m => m.IMCPageModule)
+  },  {
+    path: 'ejercicio',
+    loadChildren: () => import('./ejercicio/ejercicio.module').then( m => m.EjercicioPageModule)
   }
+
 
 
 
