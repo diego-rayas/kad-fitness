@@ -31,5 +31,13 @@ export class LoginPage implements OnInit {
       })
       .catch(error => console.log(error));
   }
+  onClick() {
+    this.userService.loginWithGoogle()
+      .then(response => {
+        console.log(response);
+        this.router.navigate(['/homeLog']);
+      })
+      .catch(error => console.log(error))
+  }
 
 }
