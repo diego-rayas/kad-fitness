@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
 const routes: Routes = [
   {
     path: 'homeLog',
@@ -26,10 +25,15 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
-  },  {
+  },
+  {
     path: 'imc',
     loadChildren: () => import('./imc/imc.module').then( m => m.IMCPageModule)
+  },  {
+    path: 'ejercicio',
+    loadChildren: () => import('./ejercicio/ejercicio.module').then( m => m.EjercicioPageModule)
   }
+
 
 
 

@@ -1,0 +1,170 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ejercicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p class="ion-padding">Selecciona el tipo de Ejercicio:</p>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="https://w7.pngwing.com/pngs/884/123/png-transparent-fitness-centre-exercise-physical-fitness-personal-trainer-computer-icons-gym-fitness-physical-fitness-text-logo.png" />
+      </ion-avatar>
+      <ion-label>Ejercicios de pecho
+        <ion-button expand="block" (click)="setOpenPecho(true)">Ver</ion-button>
+        <ion-modal [isOpen]="isModalOpenPecho">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Ejercicio Pecho</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenPecho(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Para realizar Ejercicios de pecho te recomendamos el siguiente video 
+                <br>
+                <br>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/VB09kLgJDo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="https://w7.pngwing.com/pngs/483/794/png-transparent-total-gym-lake-country-racquet-athletic-club-physical-fitness-fitness-centre-exercise-jumpstation-physical-fitness-silhouette-exercise.png" />
+      </ion-avatar>
+      <ion-label>Ejercicios de pierna
+        <ion-button expand="block" (click)="setOpenPierna(true)">Ver</ion-button>
+      <ion-modal [isOpen]="isModalOpenPierna">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Ejercicio Pierna</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpenPierna(false)">Cerrar</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <p>
+              Para realizar Ejercicios de pierna te recomendamos el siguiente video 
+              <br>
+              <br>
+              <iframe width="250" height="150" src="https://www.youtube.com/embed/VB09kLgJDo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+      </ion-label>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="https://img2.freepng.es/20180629/czh/kisspng-exercise-computer-icons-clip-art-icon-fitness-5b35c027adc919.2195439815302492557118.jpg" />
+      </ion-avatar>
+      <ion-label>Ejercicios de brazo
+        <ion-button expand="block" (click)="setOpenBrazo(true)">Ver</ion-button>
+      <ion-modal [isOpen]="isModalOpenBrazo">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Ejercicio Brazo</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpenBrazo(false)">Cerrar</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <p>
+              Para realizar Ejercicios de brazo te recomendamos el siguiente video 
+              <br>
+              <br>
+              <iframe width="250" height="150" src="https://www.youtube.com/embed/VB09kLgJDo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+      </ion-label>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="https://e7.pngegg.com/pngimages/212/566/png-clipart-computer-icons-pilates-stretching-icon-health-fitness-yoga-yoga-physical-fitness-sport.png" />
+      </ion-avatar>
+      <ion-label>Ejercicios de abdomen
+        <ion-button expand="block" (click)="setOpenAbdomen(true)">Ver</ion-button>
+        <ion-modal [isOpen]="isModalOpenAbdomen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Ejercicio abdomen</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenAbdomen(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Para realizar Ejercicios de abdomen te recomendamos el siguiente video 
+                <br>
+                <br>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/VB09kLgJDo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+     
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="https://img2.freepng.es/20180319/pgw/kisspng-physical-fitness-fitness-centre-physical-exercise-fitness-icon-png-exercise-fitness-gym-5ab02e82eff852.5303697915214956829829.jpg" />
+      </ion-avatar>
+      <ion-label>Ejercicios de cardio
+        <ion-button expand="block" (click)="setOpenCardio(true)">Ver</ion-button>
+        <ion-modal [isOpen]="isModalOpenCardio">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Ejercicio Cardio</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenCardio(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Para realizar Ejercicios de cardio te recomendamos el siguiente video 
+                <br>
+                <br>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/VB09kLgJDo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
