@@ -5,16 +5,64 @@
     </ion-buttons>
     <ion-title>{{ folder }}</ion-title>
   </ion-toolbar>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </ion-header>
- 
+
+
 <ion-content [fullscreen]="true">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-14">
+        <div class="card mt-3">
+          <h5 class="card-header">Calcular IMC</h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Ingresa tu informacion</h6>
+            <div>
+              <div class="mt-2">
+                <label class="fw-bold">Peso(Kg)</label>
+                <input class="form-control" type="number" [(ngModel)]="weight">
+              </div>
   
-  <ion-item>
-    <ion-label>Altura:</ion-label>
-    <ion-input [formControl]="Altura"></ion-input>
-    <ion-label>Peso:</ion-label>
-    <ion-input [formControl]="Peso"></ion-input>
-  </ion-item>
-  <p class="ion-padding">Tu IMC es de:{{ Peso.value / (Altura.value * Altura.value) *10000 }}</p>
+              <div class="mt-2">
+                <label class="fw-bold">Altura(Cm)</label>
+                <input class="form-control" type="number" [(ngModel)]="height">
+              </div>
+            </div>
+            <div class="text-center mt-2">
+              <button style="width: 200px" class="btn btn-primary mb-2" (click)="calcBMI()">
+                Calcular IMC
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      
+    </div>
+  
+  
+    <div class="row">
+      <div class="col-14">
+        <div class="card mt-4">
+          <div class="card-body">
+            <div>
+              <div>
+                <h5 class="card-header">Tu IMC es</h5>
+                <br>
+              </div>
+              <h4 *ngIf="bmi" class="mt-2">{{bmi.toFixed(2)}}</h4>
+              <h4 *ngIf="bmi" class="mt-2">{{mensaje}}</h4>
+     
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </div>
 
 </ion-content>
