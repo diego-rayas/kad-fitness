@@ -32,6 +32,10 @@ const routes: Routes = [
   },  {
     path: 'ejercicio',
     loadChildren: () => import('./ejercicio/ejercicio.module').then( m => m.EjercicioPageModule)
+  },
+  {
+    path: 'calcular-calorias',
+    loadChildren: () => import('./calcular-calorias/calcular-calorias.module').then( m => m.CalcularCaloriasPageModule)
   }
 
 
