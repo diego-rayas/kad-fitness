@@ -22,7 +22,7 @@ export class CalcularCaloriasPage{
   calcBMI() {
     if (this.sex<=1) {
       this.bmi = (((10*this.weight)+(6.25*this.height)-(5*this.age)+5))
-        }else if(this.sex>=1) {
+        }else if(this.sex>=2) {
           this.bmi = (((10*this.weight)+(6.25*this.height)-(5*this.age)-161))
 
 

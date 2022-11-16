@@ -36,6 +36,10 @@ const routes: Routes = [
   {
     path: 'calcular-calorias',
     loadChildren: () => import('./calcular-calorias/calcular-calorias.module').then( m => m.CalcularCaloriasPageModule)
+  },
+  {
+    path: 'recetas',
+    loadChildren: () => import('./recetas/recetas.module').then( m => m.RecetasPageModule)
   }
 
 

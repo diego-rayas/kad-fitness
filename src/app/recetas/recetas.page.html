@@ -1,0 +1,167 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Recetas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p class="ion-padding">Selecciona el tipo de dieta que necesitas:</p>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="" />
+      </ion-avatar>
+      <ion-label>Recetas 1200 calorias
+        <ion-button expand="block" (click)="setOpenPecho(true)">Ver</ion-button>
+        <ion-modal [isOpen]="isModalOpenPecho">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>1200 calorias</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenPecho(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Prepara esta dieta de 1200 Calorías para mantener el peso sin perder ni un solo nutriente.
+                <br>
+                <br>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/6uSxMBq-Fj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="" />
+      </ion-avatar>
+      <ion-label>Recetas 600 calorias
+        <ion-button expand="block" (click)="setOpenPierna(true)">Ver</ion-button>
+      <ion-modal [isOpen]="isModalOpenPierna">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Receta 600 calorias</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpenPierna(false)">Cerrar</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <p>
+              Te recomendamos no llevar esta dieta y comunicarte con un especialista
+              <br>
+              <br>
+              <iframe width="250" height="150" src="https://www.youtube.com/embed/hdfanlWNvtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+      </ion-label>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="" />
+      </ion-avatar>
+      <ion-label>Recetas de 1500 calorias
+        <ion-button expand="block" (click)="setOpenBrazo(true)">Ver</ion-button>
+      <ion-modal [isOpen]="isModalOpenBrazo">
+        <ng-template>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>1500 calorias</ion-title>
+              <ion-buttons slot="end">
+                <ion-button (click)="setOpenBrazo(false)">Cerrar</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <p>
+              Aqui tienes una dieta para adelgazar y que además sea segura,barata y equilibrada              <br>
+              <br>
+              <iframe width="250" height="150" src="https://www.youtube.com/embed/XixOcfaCO4w?start=88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+      </ion-label>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="" />
+      </ion-avatar>
+      <ion-label>Recetas de 2000 calorias
+        <ion-button expand="block" (click)="setOpenAbdomen(true)">Ver</ion-button>
+        <ion-modal [isOpen]="isModalOpenAbdomen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>2000 calorias</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenAbdomen(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                En el video vas a ver:1 - Como llevar una dieta flexible , 2 - Como estar en déficit calórico , 3 - Como llegar a tus calorías y proteínas objetivo                <br>
+                <br>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/paj6t78ZPro?start=83" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+     
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of mountains"
+          src="" />
+      </ion-avatar>
+      <ion-label>Recetas de mas de 3000 calorias
+        <ion-button expand="block" (click)="setOpenCardio(true)">Ver</ion-button>
+        <ion-modal [isOpen]="isModalOpenCardio">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>mas de 3000 calorias</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenCardio(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <p>
+                Dieta de 3000 calorías diarias, con ricas recetas, para ganar masa muscular                 <br>
+                <br>
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/Iwk8LXT2IZ0?start=83" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-label>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
